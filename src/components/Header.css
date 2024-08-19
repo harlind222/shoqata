@@ -1,0 +1,50 @@
+header {
+    background-color: #16253b;
+    padding: 10px 30px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px; /* Ndryshoni madhësinë sipas nevojës */
+    margin-right: 15px;
+  }
+  
+  .brand-name {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  

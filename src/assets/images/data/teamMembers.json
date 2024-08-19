@@ -1,0 +1,60 @@
+{
+    "senior": [
+      {
+        "id": 1,
+        "name": "J. Heath Stewart",
+        "position": "B.S. Mechanical Engineering",
+        "bio": "Individual Curriculum Vitae available upon request.",
+        "image": "/path-to-image/image1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "M. Tharon Dukes",
+        "position": "B.S. Mechanical Engineering",
+        "bio": "Individual Curriculum Vitae available upon request.",
+        "image": "../assets/images/team2.jpg"
+      }
+    ],
+    "associates": [
+      {
+        "id": 3,
+        "name": "A. Shawn Tucker",
+        "position": "Associate Reconstructionist",
+        "bio": "Individual Curriculum Vitae available upon request.",
+        "image": "/path-to-image/image3.jpg"
+      },
+      {
+        "id": 3,
+        "name": "A. Shawn Tucker",
+        "position": "Associate Reconstructionist",
+        "bio": "Individual Curriculum Vitae available upon request.",
+        "image": "/path-to-image/image3.jpg"
+      },
+      {
+        "id": 3,
+        "name": "A. Shawn Tucker",
+        "position": "Associate Reconstructionist",
+        "bio": "Individual Curriculum Vitae available upon request.",
+        "image": "/path-to-image/image3.jpg"
+      }
+      
+      
+    ],
+    "administrative": [
+      {
+        "id": 4,
+        "name": "Sheila Stewart",
+        "position": "Office Manager",
+        "bio": "Individual Curriculum Vitae available upon request.",
+        "image": "/path-to-image/image4.jpg"
+      },
+      {
+      "id": 5,
+        "name": "Sheila Stewart",
+        "position": "Office Manager",
+        "bio": "Individual Curriculum Vitae available upon request.",
+        "image": "/path-to-image/image4.jpg"
+    }
+    ]
+  }
+  

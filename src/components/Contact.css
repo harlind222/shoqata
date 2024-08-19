@@ -1,0 +1,107 @@
+.contact-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .hero {
+    /* background-image: url('../assets/images/contactBackground.jpg'); Ndërroni me rrugën e saktë të fotos */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #003366;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f8f8f8;
+  }
+  
+  .contact-details {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .contact-details img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .contact-details p {
+    font-size: 1.2rem;
+  }
+  
+  .contact-form {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .captcha {
+    margin-bottom: 20px;
+  }
+  
+  .captcha-box {
+    height: 100px; /* Rregulloni sipas kërkesave të captcha */
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .footer {
+    background-color: #16253b;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer nav a {
+    color: #f39c12;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer nav a:hover {
+    text-decoration: underline;
+  }
+  

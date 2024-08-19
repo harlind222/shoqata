@@ -1,0 +1,130 @@
+/* Home.css */
+.home {
+    font-family: Arial, sans-serif;
+    color: #00263b;
+  }
+  
+  .hero {
+    background-image: url('../assets/images/cover.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 150px 20px; /* Rrit padding për t'i dhënë më shumë hapësirë hero section */
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .buttons button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .buttons button:hover {
+    background-color: #ff5733;
+    color: #ffffff;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .service-item {
+    text-align: center;
+    max-width: 300px;
+    background-color: #00263b;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .service-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .service-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .service-item button {
+    background-color: #ff5733;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #003049; /* Ngjyra e errët e seksionit të poshtëm të footer-it */
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  footer h2 {
+    background-color: #d95d39; /* Ngjyra e seksionit të sipërm të footer-it */
+    color: #ffffff;
+    padding: 15px;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  footer nav {
+    margin-top: 20px;
+  }
+  
+  footer nav a {
+    color: #ffa07a; /* Ngjyra e tekstit për linket në footer */
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  footer nav a:hover {
+    color: #ffffff;
+  }
+  
+  footer .copyright {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #adb5bd;
+  }
+  
+  footer .arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  
+  footer .arrows span {
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  

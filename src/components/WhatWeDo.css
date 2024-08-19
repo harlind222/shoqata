@@ -1,0 +1,127 @@
+/* General Styles */
+.what-we-do {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../assets/images/cover2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #003366;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Collision Reconstruction Section */
+.collision-reconstruction {
+    padding: 4rem 2rem;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.collision-reconstruction h2 {
+    font-size: 2.5rem; /* Madhësia e fontit për titujt */
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 1.5rem;
+}
+
+.collision-reconstruction p {
+    font-size: 1.2rem; /* Madhësia e fontit për paragrafët */
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.collision-reconstruction img {
+    margin-top: 2rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Services Overview Section */
+.services-overview {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.service-item {
+    text-align: center;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    font-size: 1.3rem;
+    color: #e94e1b;
+}
+
+/* Capabilities Section */
+.capabilities {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.capabilities h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.capabilities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.capabilities li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #16253b;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.footer-content nav a {
+    color: #f39c12;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.footer-content nav a:hover {
+    text-decoration: underline;
+}
