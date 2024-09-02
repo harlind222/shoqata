@@ -1,96 +1,112 @@
 .the-team {
-    font-family: Arial, sans-serif;
-    padding: 2rem;
-    background-color: #f8f8f8;
-    color: #333;
-  }
-  
-  .team-intro h1 {
-    font-size: 2.5rem;
-    color: #003366;
-  }
-  
-  .team-intro p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-top: 1rem;
-  }
-  
-  .team-members, .administrative {
-    margin-top: 3rem;
-  }
-  
-  h2 {
-    font-size: 2rem;
-    color: #003366;
-    margin-bottom: 1.5rem;
-  }
-  
-  .member-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .member-item {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .member-item img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-bottom: 1rem;
-  }
-  
-  .member-item h3 {
-    font-size: 1.5rem;
-    color: #003366;
-    margin-bottom: 0.5rem;
-  }
-  
-  .member-item p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .member-item button {
-    background-color: #003366;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .member-item button:hover {
-    background-color: #e94e1b;
-  }
-  .footer {
-    background-color: #16253b;
-    color: #fff;
-    padding: 30px 20px;
-    text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 2rem;
+  background-color: #f7f9fc;
+  color: #2c3e50;
 }
 
-.footer h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.team-intro h1 {
+  font-size: 2.5rem;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-.footer-content nav a {
-    color: #f39c12;
-    margin-right: 15px;
-    text-decoration: none;
+.team-intro p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #7f8c8d;
 }
 
-.footer-content nav a:hover {
-    text-decoration: underline;
+.team-members, .administrative {
+  margin-top: 3rem;
 }
-  
+
+h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.member-item {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.member-item img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.member-item h3 {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.member-item p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 1rem;
+}
+
+.member-item button {
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.member-item button:hover {
+  background-color: #e74c3c;
+}
+
+/* Quote Section */
+.quote-section {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quote-section blockquote {
+  font-size: 1.4rem;
+  color: #333;
+  font-style: italic;
+  border-left: 5px solid #003366;
+  padding-left: 15px;
+  display: inline-block;
+  max-width: 600px;
+  margin: 0 auto;
+}

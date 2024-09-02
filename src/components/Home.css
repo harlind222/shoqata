@@ -1,130 +1,174 @@
-/* Home.css */
 .home {
-    font-family: Arial, sans-serif;
-    color: #00263b;
-  }
-  
-  .hero {
-    background-image: url('../assets/images/cover.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    color: #ffffff;
-    padding: 150px 20px; /* Rrit padding për t'i dhënë më shumë hapësirë hero section */
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-  }
-  
-  .buttons button {
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .buttons button:hover {
-    background-color: #ff5733;
-    color: #ffffff;
-  }
-  
-  .services {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .service-item {
-    text-align: center;
-    max-width: 300px;
-    background-color: #00263b;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .service-item img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .service-item h3 {
-    font-size: 1.5rem;
-    margin: 15px 0;
-  }
-  
-  .service-item p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  
-  .service-item button {
-    background-color: #ff5733;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  footer {
-    background-color: #003049; /* Ngjyra e errët e seksionit të poshtëm të footer-it */
-    color: #ffffff;
-    padding: 30px 20px;
-    text-align: center;
-  }
-  
-  footer h2 {
-    background-color: #d95d39; /* Ngjyra e seksionit të sipërm të footer-it */
-    color: #ffffff;
-    padding: 15px;
-    margin: 0;
-    font-size: 1.5rem;
-  }
-  
-  footer nav {
-    margin-top: 20px;
-  }
-  
-  footer nav a {
-    color: #ffa07a; /* Ngjyra e tekstit për linket në footer */
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  footer nav a:hover {
-    color: #ffffff;
-  }
-  
-  footer .copyright {
-    margin-top: 15px;
-    font-size: 0.9rem;
-    color: #adb5bd;
-  }
-  
-  footer .arrows {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding: 0 10px;
-  }
-  
-  footer .arrows span {
-    color: #ffffff;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.hero {
+  background-color: #f5f5f5; /* Një ngjyrë e lehtë gri për sfondin */
+  padding: 120px 20px; /* Hapësirë e mirë për t'i dhënë frymëmarrje tekstit */
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hije e lehtë për t'i dhënë thellësi seksionit */
+}
+
+.hero h1 {
+  font-size: 3.5rem; /* Font më i madh për titullin */
+  color: #222; /* Ngjyrë e theksuar për tekstin */
+  margin-bottom: 20px;
+  font-weight: 700; /* Font i trashë për ta bërë më të dukshëm */
+  letter-spacing: 1px; /* Hapësirë mes shkronjave për stil të qartë dhe modern */
+}
+
+.hero p {
+  font-size: 1.25rem; /* Pak më e madhe se standardi për t'u lexuar lehtësisht */
+  color: #555; /* Ngjyrë gri e lehtë për kontrast të qetë */
+  max-width: 600px; /* Gjerësia maksimale për ta mbajtur tekstin kompakt */
+  margin: 0 auto 30px auto; /* Centrim i tekstit dhe hapësirë e mirë për fundin */
+  line-height: 1.8; /* Hapësirë më e madhe mes rreshtave për lexim më të mirë */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Hapësirë mes butonave */
+}
+
+.primary-button, .secondary-button {
+  padding: 15px 30px;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.primary-button {
+  background-color: #007bff; /* Blu e lehtë për butonin kryesor */
+  color: #fff; /* Tekst i bardhë për kontrast */
+  border: 2px solid #007bff; /* Krijon një efekt të butë me borderin */
+}
+
+.secondary-button {
+  background-color: transparent; /* Butoni i dytë pa sfond */
+  color: #007bff; /* E njëjta ngjyrë si butoni kryesor */
+  border: 2px solid #007bff; /* Border blu për ta bërë më të dukshëm */
+}
+
+.primary-button:hover {
+  background-color: #0056b3; /* Ndryshim ngjyre në hover për efekt më dramatik */
+}
+
+.secondary-button:hover {
+  background-color: #007bff;
+  color: #fff; /* Kthehet në një buton të ngjashëm me kryesorin në hover */
+}
+
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.service-item {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.learn-more {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 20px 10px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+footer nav {
+  margin-bottom: 10px;
+}
+
+footer nav a {
+  color: #555;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+  color: #000;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  color: #555;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #000;
+}
+
+footer .copyright {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 10px;
+}

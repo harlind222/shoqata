@@ -59,21 +59,11 @@ function TheTeam() {
         </div>
       </section>
 
-      <footer className="footer">
-        <div className="footer-content">
-          <h2>PERGJIGJE 24 ORE</h2>
-          <p>
-            Call <strong>+355 69 707 2755</strong> 
-            {/* or <a href="shknnta@gmail.com">message us</a>. */}
-          </p>
-          <nav>
-          <a href="#whatwedo">Çfarë bëjmë ne</a>
-          <a href="#theteam">Ekipi</a>
-          <a href="#howwedoit">Si ta bëjmë </a>
-          <a href="#contact">Kontakti</a>
-          </nav>
-        </div>
-      </footer>
+      <section className="quote-section">
+        <blockquote>
+          "EKSPERTËT E KUALIFIKUAR"
+        </blockquote>
+      </section>
     </div>
   );
 }
