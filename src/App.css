@@ -1,50 +1,77 @@
-/* App.css */
+/* Responsive styling for mobile view */
+@media (max-width: 768px) {
+  /* Hero Section */
+  .hero h1 {
+    font-size: 2.5rem;
+    padding: 10px 20px;
+  }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  .hero p {
+    font-size: 1rem;
+    padding: 0 15px;
+    line-height: 1.5;
+  }
+
+  /* General content and section titles */
+  .services-overview h2,
+  .text-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .text-content p,
+  .service-item p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  /* Ensure images in grid scale properly */
+  .service-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust grid layout for smaller screens */
+  .services-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Adjust margins and padding for sections */
+  .services-overview,
+  .collision-reconstruction {
+    padding: 20px 15px;
+    margin-bottom: 30px;
+  }
+
+  /* Buttons on mobile */
+  button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 15px;
+  }
 }
 
-.App {
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  /* Further reduce font sizes */
+  .hero h1 {
+    font-size: 2rem;
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 20px 0;
-  color: #333;
-}
+  .hero p {
+    font-size: 0.9rem;
+  }
 
-p {
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
+  .service-item h3 {
+    font-size: 1.2rem;
+  }
 
-button {
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-a {
-  text-decoration: none;
-  color: #007BFF;
-}
-
-a:hover {
-  color: #0056b3;
+  button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
 }

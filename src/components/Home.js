@@ -1,62 +1,77 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa'; 
 import './Home.css';
 import service1 from '../assets/images/service1.jpg';
 import service2 from '../assets/images/service2.jpg';
 import service3 from '../assets/images/service3.jpg';
-import { FaFacebookF, FaInstagram } from 'react-icons/fa';
+import heroImage from '../assets/images/background2.jpg'; // Importo imazhin hero
+
+const services = [
+  {
+    title: 'SHËRBIME TË SHPEJTA DHE EFIKASE',
+    image: service1,
+    description: 'Ne ofrojmë përgjigje të menjëhershme dhe veprim të shpejtë për të gjithë rastet e aksidenteve.',
+  },
+  {
+    title: 'EKSPERTIZË E LARTË',
+    image: service2,
+    description: 'Ofrojmë mbrotje. Akte ekspertimi Autoteknike në të tre shkallët e gjyqësorit.',
+  },
+  {
+    title: 'ANALIZA TË THELLUARA',
+    image: service3,
+    description: 'Ne përdorim teknologjinë më të fundit për të analizuar dhe rindërtuar aksidentet në mënyrë precize.',
+  },
+];
 
 function Home() {
   return (
     <div className="home">
-      <section className="hero">
-        <h1>Ekip i Ekspertëve të Kualifikuar</h1>
-        <p>Ekipi ynë i ekspertëve është i specializuar në hetimin dhe rindërtimin e aksidenteve të trafikut.</p>
-        {/* <div className="buttons">
-          <Link to="/whatwedo" className="primary-button">Shërbimet Tona</Link>
-          <Link to="/howwedoit" className="secondary-button">Fushat e Ekspertizës</Link>
-        </div> */}
+      <section 
+        className="hero"
+        style={{
+          backgroundImage: `url(${heroImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'left center',
+        }}
+      >
+        <div className="hero-text">
+          <h1>EKSPERT DHE AVOKAT MSC. TRANSPORT DR. GEZIM HOXHA</h1>
+          <p>44 VJET EKSPERIENCË I AKSIDENTEVE RRUGORE</p>
+        </div>
       </section>
 
       <section className="services">
-        <div className="service-item">
-          <img src={service1} alt="Service 1" />
-          <h3>SHËRBIME TË SHUMTA</h3>
-          <p>Reagim i Shpejtë, Konsulencë, Rindërtim i plotë i Përplasjes, Dëshmi eksperti.</p>
-          <button className="learn-more">Mësoni më shumë</button>
-        </div>
-        <div className="service-item">
-          <img src={service2} alt="Service 2" />
-          <h3>TEKNOLOGJI E AVANCUAR</h3>
-          <p>Ne përdorim pajisjet, programet, proceset dhe teknikat më të fundit.</p>
-          <button className="learn-more">Mësoni më shumë</button>
-        </div>
-        <div className="service-item">
-          <img src={service3} alt="Service 3" />
-          <h3>PËRVOJË E PASUR</h3>
-          <p>Mbi 10 vjet përvojë, me një ekip rindërtues të lartë.</p>
-          <button className="learn-more">Mësoni më shumë</button>
-        </div>
+        {services.map((service, index) => (
+          <div className="service-item" key={service.title}>
+            <img src={service.image} alt={service.title} />
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+          </div>
+        ))}
       </section>
 
       <footer>
         <h2>Kontaktoni Ekspertët</h2>
         <nav>
-          <Link to="/whatwedo">ÇFARË BËJMË NE</Link>
-          <Link to="/theteam">EKIPI</Link>
-          <Link to="/howwedoit">SI TA BËJMË</Link>
-          <Link to="/contact">KONTAKTI</Link>
+          <a href="/whatwedo">ÇFARË BËJMË?</a>
+          <a href="/theteam">EKIPI</a>
+          <a href="/howwedoit">SI E BËJMË?</a>
+          <a href="/contact">KONTAKTI</a>
         </nav>
         <div className="social-icons">
-          <a href="https://www.facebook.com/profile.php?id=61564991512134" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             <FaFacebookF />
           </a>
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a>
+          <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+            <FaTiktok />
+          </a>
         </div>
         <div className="copyright">
-          Copyright © 2024 Shoqata Kombëtare në Ndihmë të Aksidentuarve
+          ©2024 Shoqata Kombëtare në Ndihmë të Aksidentuarve. All rights reserved.
         </div>
       </footer>
     </div>

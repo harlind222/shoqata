@@ -4,7 +4,6 @@ import teamMembers from '../assets/images/data/teamMembers.json';
 import Team1 from '../assets/images/team1.jpg';
 import Team2 from '../assets/images/team2.jpg';
 import Team3 from '../assets/images/team3.jpg';
-// import Team4 from '../assets/images/team4.jpg';
 
 function TheTeam() {
   return (
@@ -12,38 +11,49 @@ function TheTeam() {
       <section className="team-intro">
         <h1>EKIPI JONË</h1>
         <p>
-        E themeluar mbi 10 vjet më parë, firma përbëhet nga Rindërtues dhe Bashkëpunëtorë të Lartë, të gjithë ish-oficerë të zbatimit të ligjit që i shërbyen Gjeorgjisë dhe Tenesit. Rindërtuesit tanë të vjetër kanë dallimin e shërbimit në njësinë e rindërtimit të vrasjeve me automjete të Gjeorgjisë, e njohur si Ekipi i Specializuar i Rindërtimit të Përplasjeve (SCRT).
+          "Shoqata Kombëtare në Ndihmë të Aksidentuarve" ofron mbështetje dhe ekspertizë për viktimat e aksidenteve, duke ofruar shërbime për rindërtimin e aksidenteve dhe këshillim ligjor. Me një ekip të kualifikuar, synojmë të lehtësojmë procesin e rikuperimit dhe të përmirësojmë sigurinë rrugore në Shqipëri.
         </p>
       </section>
 
       <section className="team-members">
-        <h2>RIKONSTRUKSIONISTËT E LARTË</h2>
+        <h2>EKSPERTËT E AKSIDENTEVE</h2>
         <div className="member-grid">
-          {teamMembers.senior.map(member => (
+          {teamMembers.senior.map((member, index) => (
             <div className="member-item" key={member.id}>
-             <img src={Team1} alt="Team Member 1" />
+              <img 
+                src={index === 0 ? Team1 : Team2} // First member uses Team1, second uses Team2
+                alt={`Team Member ${index + 1}`} 
+              />
               <h3>{member.name}</h3>
               <p>{member.position}</p>
               <p>{member.bio}</p>
-              {/* <button>Read Bio</button> */}
+              <div className="contact-info">
+                <p>
+                  <span className="icon">📧</span>
+                  <a href={`mailto:${member.email}`}>{member.email}</a>
+                </p>
+                <p>
+                  <span className="icon">📞</span>
+                  <a href={`tel:${member.phone}`}>{member.phone}</a>
+                </p>
+              </div>
             </div>
           ))}
         </div>
 
-        <h2>BASHKËPUNIM RIKONSTRUKSIONISTË</h2>
+        {/* Uncomment the sections below if you have additional members */}
+        {/* <h2>BASHKËPUNIM RIKONSTRUKSIONISTË</h2>
         <div className="member-grid">
           {teamMembers.associates.map(member => (
             <div className="member-item" key={member.id}>
-                       <img src={Team2} alt="Team Member 1" />
+              <img src={Team2} alt="Team Member 1" />
               <h3>{member.name}</h3>
               <p>{member.position}</p>
               <p>{member.bio}</p>
-              {/* <button>Read Bio</button> */}
             </div>
           ))}
         </div>
-      </section>
-
+      
       <section className="administrative">
         <h2>ADMINISTRATIVE</h2>
         <div className="member-grid">
@@ -53,10 +63,10 @@ function TheTeam() {
               <h3>{member.name}</h3>
               <p>{member.position}</p>
               <p>{member.bio}</p>
-              {/* <button>Read Bio</button> */}
             </div>
           ))}
         </div>
+      </section> */}
       </section>
 
       <section className="quote-section">

@@ -2,17 +2,21 @@
     "senior": [
       {
         "id": 1,
-        "name": "J. Heath Stewart",
-        "position": "B.S. Mechanical Engineering",
-        "bio": "Individual Curriculum Vitae available upon request.",
-        "image": "/path-to-image/image1.jpg"
+        "name": "Gezim Hoxha",
+        "position": "Ekspert dhe Avokat për Aksidentet Rrugore",
+        "bio": "Ekspert dhe Avokat për Aksidentet Rrugore dhe Opinionist në Televizione në Shoqata Kombëtare në Ndihmë të Aksidentuarve",
+        "image": "/path-to-image/image1.jpg",
+        "email": "hoxha.gezim1951@gmail.com",
+        "phone": "+355 69 630 7731"
       },
       {
         "id": 2,
-        "name": "M. Tharon Dukes",
-        "position": "B.S. Mechanical Engineering",
-        "bio": "Individual Curriculum Vitae available upon request.",
-        "image": "../assets/images/team2.jpg"
+        "name": "Endrit Hoxha",
+        "position": "Ekspert dhe Avokat për Aksidentet Rrugore",
+        "bio": "Ekspert dhe Avokat për Aksidentet Rrugore, Kryej Akte Ekspertimi Kriminalistike të të gjitha llojeve në Shoqata Kombëtare",
+        "image": "/path-to-image/image2.jpg",
+        "email": "endrithoxha87@gmail.com",
+        "phone": "+355 67 269 9999"
       }
     ],
     "associates": [

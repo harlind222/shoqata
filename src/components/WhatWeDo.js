@@ -10,11 +10,9 @@ function WhatWeDo() {
   return (
     <div className="what-we-do">
       <section className="hero">
-        <h1>ÇFARË BËJMË</h1>
+        <h1>ÇFARË BËJMË?</h1>
         <p>
-          Kombinimi i fuqishëm i përvojës shumëvjeçare të zbatimit të ligjit, 
-          trajnimi i avancuar i rindërtimit dhe edukimi inxhinierik na bën një 
-          burim të vlefshëm dhe të besueshëm për të gjitha nevojat tuaja të rindërtimit të aksidenteve.
+        Kombinimi i pasur i përvojës shumëvjeçare në zbatimin e ligjit, trajnimeve të specializuara në rindërtim dhe njohurive të avancuara inxhinierike na bën një partner të besueshëm dhe të çmuar për çdo nevojë tuajën në rindërtimin e aksidenteve. Ofrojmë mundësi në marrjen e dëmshperblimit në rast aksidenti.
         </p>
       </section>
 
@@ -41,58 +39,26 @@ function WhatWeDo() {
           <div className="service-item">
             <img src={rapidResponse} alt="Përgjigje e Shpejtë" />
             <h3>PËRGJIGJE E SHPEJTË</h3>
+            <p>Reagim i menjëhershëm dhe i efektshëm për të gjitha situatat emergjente.</p>
           </div>
           <div className="service-item">
             <img src={consultation} alt="Konsultim" />
             <h3>KONSULTIM</h3>
+            <p>Ekspertizë e lartë dhe këshilla strategjike për çështje të komplikuara.</p>
           </div>
           <div className="service-item">
             <img src={crashReconstruction} alt="Rindërtim i Aksidentit" />
             <h3>RINDËRTIMI I AKSIDENTIT</h3>
+            <p>Rindërtim i saktë dhe i detajuar për të përcaktuar shkakun e aksidentit.</p>
           </div>
           <div className="service-item">
             <img src={expertTestimony} alt="Dëshmi Eksperti" />
-            <h3>DËSHMI EKSPERTI</h3>
+            <h3>DËMSHPËRBLIME NË RASTE AKSIDENTI</h3>
+            <p>Me përvoje 20-vjecare në fushën e sigurimeve.</p>
           </div>
         </div>
-        <section className="capabilities">
-          <h3>AFTËSITË TONA</h3>
-          <div className="capabilities-grid">
-            <div className="capability-item">
-              <i className="fas fa-bolt"></i>
-              <h4>Reagimi i Shpejtë</h4>
-              <p>Ne përgjigjemi shpejt dhe me efikasitet për çdo emergjencë.</p>
-            </div>
-            <div className="capability-item">
-              <i className="fas fa-tools"></i>
-              <h4>Përpunimi i Faqes</h4>
-              <p>Pajisjet dhe teknikat më të mira për përpunimin e vendeve të ngjarjes.</p>
-            </div>
-            <div className="capability-item">
-              <i className="fas fa-shield-alt"></i>
-              <h4>Ruajtja e Dëshmive</h4>
-              <p>Sigurimi dhe ruajtja e provave është prioriteti ynë kryesor.</p>
-            </div>
-            <div className="capability-item">
-              <i className="fas fa-car-crash"></i>
-              <h4>Rindërtimi i Përplasjes</h4>
-              <p>Rindërtojmë përplasjet për të përcaktuar shkakun dhe përgjegjësinë.</p>
-            </div>
-            <div className="capability-item">
-              <i className="fas fa-database"></i>
-              <h4>Marrja e të Dhënave</h4>
-              <p>Analizë e thelluar dhe e saktë e të dhënave të aksidentit.</p>
-            </div>
-            <div className="capability-item">
-              <i className="fas fa-gavel"></i>
-              <h4>Dëshmia e Ekspertit</h4>
-              <p>Dëshmi profesionale dhe të besueshme në gjykatë.</p>
-            </div>
-          </div>
-        </section>
       </section>
 
-      {/* Remove footer and add quote section */}
       <section className="quote-section">
         <blockquote>
           "Ekspertiza dhe përkushtimi ynë janë të bazuara në vite përvojë dhe përpjekje për drejtësi."

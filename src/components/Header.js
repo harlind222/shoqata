@@ -27,7 +27,7 @@ function Header() {
         </div>
 
         <div className="right-menu">
-          <a href="tel:+355697072755" className="call-now">
+          <a href="tel:+355 69 630 7731" className="call-now">
             <FaPhone className="call-now-icon" />
             Telefononi
           </a>
@@ -39,10 +39,10 @@ function Header() {
         <FaTimes className="close-icon" onClick={toggleMenu} />
         <ul>
           <li>
-            <Link to="/whatwedo" className="nav-item" onClick={toggleMenu}>ÇFARË BËJMË</Link>
+            <Link to="/whatwedo" className="nav-item" onClick={toggleMenu}>ÇFARË BËJMË?</Link>
           </li>
           <li>
-            <Link to="/howwedoit" className="nav-item" onClick={toggleMenu}>SI TA BËJMË</Link>
+            <Link to="/howwedoit" className="nav-item" onClick={toggleMenu}>SI E BËJMË?</Link>
           </li>
           <li>
             <Link to="/theteam" className="nav-item" onClick={toggleMenu}>EKIPI</Link>
