@@ -1,10 +1,11 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa'; 
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa';
 import './Home.css';
 import service1 from '../assets/images/service1.jpg';
 import service2 from '../assets/images/service2.jpg';
 import service3 from '../assets/images/service3.jpg';
-import heroImage from '../assets/images/background2.jpg'; // Importo imazhin hero
+import heroImage from '../assets/images/background2.jpg'; // Import hero image
 
 const services = [
   {
@@ -27,7 +28,7 @@ const services = [
 function Home() {
   return (
     <div className="home">
-      <section 
+      <section
         className="hero"
         style={{
           backgroundImage: `url(${heroImage})`,
@@ -43,7 +44,7 @@ function Home() {
 
       <section className="services">
         {services.map((service, index) => (
-          <div className="service-item" key={service.title}>
+          <div className="service-item" key={index}> {/* Using index as a key for list items */}
             <img src={service.image} alt={service.title} />
             <h3>{service.title}</h3>
             <p>{service.description}</p>
@@ -54,10 +55,10 @@ function Home() {
       <footer>
         <h2>Kontaktoni Ekspertët</h2>
         <nav>
-          <a href="/whatwedo">ÇFARË BËJMË?</a>
-          <a href="/theteam">EKIPI</a>
-          <a href="/howwedoit">SI E BËJMË?</a>
-          <a href="/contact">KONTAKTI</a>
+          <Link to="/whatwedo">ÇFARË BËJMË?</Link>
+          <Link to="/theteam">EKIPI</Link>
+          <Link to="/howwedoit">SI E BËJMË?</Link>
+          <Link to="/contact">KONTAKTI</Link>
         </nav>
         <div className="social-icons">
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">

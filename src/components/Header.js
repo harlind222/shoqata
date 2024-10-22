@@ -14,12 +14,14 @@ function Header() {
   return (
     <header className="header">
       <nav className="navbar">
+        {/* Menu toggle only applies to the menu icon */}
         <div className="menu-left" onClick={toggleMenu}>
           <FaBars className="menu-icon" />
           <span className="menu-text">Menu</span>
         </div>
 
-        <div className="logo-container" onClick={toggleMenu}>
+        {/* Remove onClick from the logo container */}
+        <div className="logo-container">
           <Link to="/" className="brand-name">
             <img src={logo} alt="Logo" className="logo" />
             Shoqata Kombëtare në Ndihmë të Aksidentuarve
@@ -35,6 +37,7 @@ function Header() {
         </div>
       </nav>
 
+      {/* Mini Menu */}
       <div className={`mini-menu ${isOpen ? 'open' : ''}`}>
         <FaTimes className="close-icon" onClick={toggleMenu} />
         <ul>

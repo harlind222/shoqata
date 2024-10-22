@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Contact.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa'; 
+import { FaFacebookF, FaInstagram, FaTiktok, FaMapMarkerAlt } from 'react-icons/fa'; 
+import emailjs from 'emailjs-com'; // Import EmailJS
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -9,6 +9,8 @@ function Contact() {
     email: '',
     message: '',
   });
+
+  const [emailStatus, setEmailStatus] = useState(null); // To handle email status
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,24 +20,44 @@ function Contact() {
     }));
   };
 
-  const createMailtoLink = () => {
-    const subject = encodeURIComponent(`Contact from ${formData.name}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    );
-    return `mailto:h.arlind222@gmail.com?subject=${subject}&body=${body}`;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Define your EmailJS parameters
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+    };
+
+    // Replace with your actual EmailJS service ID, template ID, and user ID
+    emailjs.send('service_u4iiu8q', 'template_hxy61dq', {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+    }, '0eP8id8oiKr0YqaEA') // Replace YOUR_USER_ID with your EmailJS public API key
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      setEmailStatus('success'); // Set success state
+    })
+    .catch((err) => {
+      console.error('FAILED...', err); // Log detailed error in console
+      setEmailStatus('failed'); // Set failure state
+    });
+
+  
   };
 
   return (
     <div className="contact-page">
       <section className="hero">
-        <h1>Kontakt</h1>
+        <h1>Kontakti</h1>
       </section>
 
       <section className="form-and-details">
         <div className="contact-form">
           <h2>Na Kontaktoni</h2>
-          <form onSubmit={(e) => e.preventDefault()}>
+          <form onSubmit={handleSubmit}>
             <label>Emri juaj*</label>
             <input
               type="text"
@@ -63,27 +85,32 @@ function Contact() {
               required
             ></textarea>
 
-            <a href={createMailtoLink()}>
-              <button type="button">Dërgo</button>
-            </a>
+            <button type="submit">Dërgo</button>
+
+            {/* Display success or failure message */}
+            {emailStatus === 'success' && <p>Mesazhi u dërgua me sukses!</p>}
+            {emailStatus === 'failed' && <p>Gabim gjatë dërgimit të mesazhit. Provoni përsëri.</p>}
           </form>
         </div>
 
         <div className="contact-details">
           <h2>Informacione Kontakti</h2>
-          <p>📞 +355 69 630 7731</p>
+          <p><a href="tel:+355696307731">📞 +355 69 630 7731</a></p>
           <p>✉️ <a href="mailto:h.arlind222@gmail.com">hoxha.gezim1951@gmail.com</a></p>
-          {/* <h3>Ndiqni Ne</h3> */}
+          <p>
+        {/* Location with icon and link */}
+        <FaMapMarkerAlt /> Rruga Haxhi Hysen Dalliu, Përballë me Prokurorinë e Tiranës
+      </p>
           <div className="social-icons">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-            <FaFacebookF />
-          </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
-          </a>
-          <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
-            <FaTiktok />
-          </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <FaInstagram />
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+              <FaTiktok />
+            </a>
           </div>
         </div>
       </section>

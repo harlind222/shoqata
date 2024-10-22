@@ -1,60 +1,63 @@
-.home {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  color: #333;
-  line-height: 1.6;
-}
-
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 120px 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   min-height: 340px;
   overflow: hidden;
 }
 
 .hero-text {
-  flex: 1;
-  padding: 40px 30px;
+  font-size: 0.4rem;
+  position: absolute;
+  bottom: 40px;
+  right: -10px;
+  max-width: 60%;
   color: #fff;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 0 15px 15px 0;
-  max-width: 50%;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0.5px;
 }
 
 .hero h1 {
-  font-size: 3.5rem;
-  color: #fff;
-  margin-bottom: 20px;
-  font-weight: 900;
-  letter-spacing: 2px;
+  font-size: 0.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  animation: fadeInUp 1s ease-in-out;
 }
 
 .hero p {
-  font-size: 1.25rem;
-  color: #ddd;
-  margin-bottom: 30px;
-  line-height: 1.8;
-  font-style: italic;
-  animation: fadeInUp 1.2s ease-in-out;
+  font-size: 0.35rem;
+  margin-bottom: 0;
+  line-height: 1;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+@media (max-width: 768px) {
+  .hero-text {
+    max-width: 80%;
+    bottom: 0px;
+    right: 30px;
+    padding: 10px;
+    font-size: 0.3rem;
+    background: rgba(0, 0, 0, 0.6); /* Darker background for readability */
+
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .hero h1 {
+    font-size: 0.4rem;
+  }
+
+  .hero p {
+    font-size: 0.3rem;
   }
 }
+
 
 .services {
   display: flex;
@@ -106,7 +109,6 @@
   margin-bottom: 15px;
   transition: transform 0.4s ease;
   z-index: 1;
-  position: relative;
 }
 
 .service-item:hover img {
@@ -118,7 +120,6 @@
   color: #003366;
   margin-bottom: 10px;
   z-index: 1;
-  position: relative;
 }
 
 .service-item p {
@@ -126,7 +127,6 @@
   color: #666;
   margin-bottom: 15px;
   z-index: 1;
-  position: relative;
 }
 
 footer {
@@ -160,168 +160,24 @@ footer nav a:hover {
 }
 
 footer .social-icons {
-  display: flex; /* Përdorim flexbox */
-  justify-content: center; /* Centralizimi horizontal */
+  display: flex;
+  justify-content: center;
   margin-top: 10px;
 }
 
 footer .social-icons a {
   color: #555;
-  margin: 0 15px; /* Rritja e hapësirës midis ikonave */
+  margin: 0 15px;
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
 
-/* Rregullimi për të përmirësuar hapsirën dhe dukshmërinë e ikonave */
 footer .social-icons a:hover {
-  color: #000; /* Ngjyra kur ikonat kalohen me mouse */
+  color: #000;
 }
-
 
 footer .copyright {
   font-size: 0.85rem;
   color: #888;
   margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-  /* Hero Section */
-  .hero {
-    padding: 50px 15px; /* Adequate padding for smaller screens */
-    flex-direction: column; /* Stack content vertically */
-    text-align: center; /* Center align text */
-  }
-
-  .hero-text {
-    padding: 20px 50px;
-    width: 100%; /* Full width for mobile screens */
-    border-radius: 10px;
-    margin: 0 auto; /* Center hero text container */
-    /* box-sizing: border-box; */
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-    line-height: 1.2;
-  }
-
-  .hero p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  /* Services Section */
-  .services {
-    padding: 20px 15px; /* Reduced padding for smaller screens */
-    flex-direction: column; /* Stack services vertically */
-    gap: 15px; /* Add space between service items */
-    align-items: center; /* Center items horizontally */
-  }
-
-  .service-item {
-    width: 90%; /* Use a fixed width for consistency */
-    max-width: 350px; /* Limit maximum width */
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Pronounced shadow for separation */
-    box-sizing: border-box; /* Include padding in width calculation */
-  }
-
-  .service-item img {
-    width: 100%; /* Full width for images */
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-
-  .service-item h3 {
-    font-size: 1.2rem; /* Adjusted size for readability */
-    margin-bottom: 10px;
-  }
-
-  .service-item p {
-    font-size: 0.95rem; /* Adjusted size */
-    line-height: 1.4;
-  }
-
-  /* Footer Section */
-  footer {
-    padding: 20px 10px;
-  }
-
-  footer nav {
-    display: flex;
-    justify-content: center; /* Center align navigation links */
-    flex-wrap: wrap;
-  }
-
-  footer nav a {
-    font-size: 0.9rem;
-    margin: 0 5px; /* Reduce space between links */
-  }
-
-  footer .social-icons {
-    display: flex;
-    justify-content: center; /* Center align icons */
-    margin-top: 15px;
-  }
-
-  footer .social-icons a {
-    font-size: 1.2rem; /* Slightly reduced size */
-    margin: 0 10px; /* Reduced spacing between icons */
-  }
-
-  footer .copyright {
-    font-size: 0.8rem; /* Slightly increased for readability */
-    text-align: center; /* Center align text */
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Hero Section for Very Small Screens */
-  .hero h1 {
-    font-size: 1.5rem; /* Smaller size for narrow screens */
-  }
-
-  .hero p {
-    font-size: 0.85rem;
-  }
-
-  /* Services Section for Very Small Screens */
-  .services {
-    padding: 15px 10px;
-    align-items: center; /* Ensure items are centered */
-  }
-
-  .service-item {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .service-item h3 {
-    font-size: 1rem;
-  }
-
-  .service-item p {
-    font-size: 0.85rem;
-  }
-
-  /* Footer Section for Very Small Screens */
-  footer nav {
-    flex-direction: column; /* Stack links vertically */
-    align-items: center;
-  }
-
-  footer nav a {
-    font-size: 0.8rem;
-    margin: 5px 0; /* Space links vertically */
-  }
-
-  footer .social-icons {
-    justify-content: center; /* Ensure icons are centered */
-  }
-
-  footer .social-icons a {
-    font-size: 1rem; /* Reduced size for smaller screens */
-  }
 }
